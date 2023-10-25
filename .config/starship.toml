@@ -1,9 +1,10 @@
-add_newline = false
-
 [character]
 success_symbol = "[>](bold green)"
 error_symbol = "[x](bold red)"
 vimcmd_symbol = "[<](bold green)"
+
+[git_commit]
+tag_symbol = " tag "
 
 [git_status]
 ahead = ">"
@@ -70,9 +71,7 @@ symbol = "fossil "
 symbol = "gcp "
 
 [git_branch]
-truncation_length = 4
-truncation_symbol = ''
-ignore_branches = ['master', 'main']
+symbol = "git "
 
 [golang]
 symbol = "go "
@@ -119,6 +118,48 @@ symbol = "ml "
 [opa]
 symbol = "opa "
 
+[os.symbols]
+Alpaquita = "alq "
+Alpine = "alp "
+Amazon = "amz "
+Android = "andr "
+Arch = "rch "
+Artix = "atx "
+CentOS = "cent "
+Debian = "deb "
+DragonFly = "dfbsd "
+Emscripten = "emsc "
+EndeavourOS = "ndev "
+Fedora = "fed "
+FreeBSD = "fbsd "
+Garuda = "garu "
+Gentoo = "gent "
+HardenedBSD = "hbsd "
+Illumos = "lum "
+Linux = "lnx "
+Mabox = "mbox "
+Macos = "mac "
+Manjaro = "mjo "
+Mariner = "mrn "
+MidnightBSD = "mid "
+Mint = "mint "
+NetBSD = "nbsd "
+NixOS = "nix "
+OpenBSD = "obsd "
+OpenCloudOS = "ocos "
+openEuler = "oeul "
+openSUSE = "osuse "
+OracleLinux = "orac "
+Pop = "pop "
+Raspbian = "rasp "
+Redhat = "rhl "
+RedHatEnterprise = "rhel "
+Redox = "redox "
+Solus = "sol "
+SUSE = "suse "
+Ubuntu = "ubnt "
+Unknown = "unk "
+Windows = "win "
 
 [package]
 symbol = "pkg "
@@ -173,9 +214,3 @@ symbol = "terraform "
 
 [zig]
 symbol = "zig "
-
-[time]
-disabled = false
-format = '[\[ $time \]]($style) '
-time_format = '%R'
-utc_time_offset = '-3'
