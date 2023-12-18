@@ -91,8 +91,6 @@ fi
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
-alias foliate="flatpak run com.github.johnfactotum.Foliate"
-
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
@@ -117,7 +115,10 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
-alias lzd='docker run --rm -it -v /var/run/docker.sock:/var/run/docker.sock -v /home/ina/Tools/lazydocker/config:/.config/jesseduffield/lazydocker lazyteam/lazydocker'
+. "$HOME/.cargo/env"
+
+
+alias oxx='docker run --rm -it -v /var/run/docker.sock:/var/run/docker.sock:ro --pull=always ghcr.io/mrjackwills/oxker'
 
 # flatpak apps
 alias telegram='flatpak run org.telegram.desktop'
