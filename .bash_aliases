@@ -1,3 +1,1 @@
-alias python=$(which python3)
-alias pip=pip3
-alias bat=batcat
+alias rasp01='ssh inapi@192.168.100.30'

@@ -132,3 +132,4 @@ alias cd='z'
 eval "$(starship init bash)"
 
 source /home/ina/.config/broot/launcher/bash/br
+source <(kubectl completion bash)
