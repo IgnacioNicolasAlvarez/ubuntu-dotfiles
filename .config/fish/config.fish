@@ -11,11 +11,11 @@ alias telegram='flatpak run org.telegram.desktop'
 alias spotify='flatpak run com.spotify.Client'
 
 alias sys-update='sudo apt update && sudo apt upgrade -y'
-alias dc-up='docker-compose up -d'
-alias dc-down='docker-compose down'
-alias dc-ps='docker-compose ps'
-alias dc-logs='docker-compose logs -f'
-alias dc-build='docker-compose build'
+alias dc-up='docker compose up -d'
+alias dc-down='docker compose down'
+alias dc-ps='docker compose ps'
+alias dc-logs='docker compose logs -f'
+alias dc-build='docker compose build'
 
 
 zoxide init fish | source
