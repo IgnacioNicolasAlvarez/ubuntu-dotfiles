@@ -115,21 +115,3 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
-. "$HOME/.cargo/env"
-
-
-alias oxx='docker run --rm -it -v /var/run/docker.sock:/var/run/docker.sock:ro --pull=always ghcr.io/mrjackwills/oxker'
-
-# cargo apps
-eval "$(zoxide init bash)"
-alias cd='z'
-
-# flatpak apps
-alias telegram='flatpak run org.telegram.desktop'
-alias spotify='flatpak run com.spotify.Client'
-alias cd='z'
-
-eval "$(starship init bash)"
-
-source /home/ina/.config/broot/launcher/bash/br
-source <(kubectl completion bash)
